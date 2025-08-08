@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Brian Mbura — Portfolio</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./images/profile1.png" alt="Favicon" class="favicon">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="brand">
+        <img src="./images/profile1.png" alt="logo" class="mini-logo">
+        <span class="brand-name">Brian Mbura</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero container" id="home">
+      <div class="hero-left">
+        <div class="profile-wrap">
+          <img src="./images/profile.png" alt="Brian Mbura" class="profile-photo">
+          <div class="pulse"></div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <h1 class="title">Hi, I'm <span class="accent">Brian Mbura</span></h1>
+        <p class="headline">Freelance Photographer/Videographer • Frontend Developer • IT Support • IT Specialist • AWS Cerified</p>
+
+        <p class="intro">
+          I build clean web experiences and multimedia content for startups and SMEs. 
+          Recently completed <strong>KukuLink</strong> — a poultry marketplace prototype (HTML/CSS).
+        </p>
+
+        <div class="cta-row">
+          <a class="btn primary" href="#projects">See Projects</a>
+          <a class="btn ghost" href="https://github.com/brianmbura" target="_blank">My GitHub</a>
+        </div>
+
+        <br />
+
+        <div class="socials small">
+          <a href="https://www.linkedin.com/in/brian-mbura/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/hatupoi_production/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/254740292960" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100064872152955" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about" class="section container reveal">
+      <h2>About Me</h2>
+      <p>
+        I hold a BSc in ICT and have practical experience in web development, video production, and IT support.
+        I enjoy solving real-world problems through simple and usable digital products.
+      </p>
+    </section>
+
+    <!-- SKILL SET -->
+    <section id="skills" class="section container reveal">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML &amp; CSS</div>
+        <div class="skill-card">Responsive Design</div>
+        <div class="skill-card">Adobe Premiere • Editing</div>
+        <div class="skill-card">IT Support & Troubleshooting</div>
+        <div class="skill-card">Git & GitHub</div>
+        <div class="skill-card">Basic JS (learning)</div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section container reveal">
+      <h2>Selected Projects</h2>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card">
+          <img class="project-thumb" src="./images/logo.png" alt="KukuLink">
+          <div class="project-body">
+            <h3>KukuLink — Poultry Market Platform</h3>
+            <p>Responsive platform connecting poultry farmers with ready market. Built with HTML &amp; CSS. Includes animated logo and image slider.</p>
+            <div class="project-links">
+              <a class="btn small" href="https://github.com/brianmbura/KukuLink-Farmer-s-Ready-Market-Platform" target="_blank">View Repo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 (placeholder) -->
+        <article class="project-card">
+          <img class="project-thumb" src="./images/hatupoi logo.png" alt="Project 2">
+          <div class="project-body">
+            <h3>Portfolio & Media Work</h3>
+            <p>Photography & videography samples, editing projects and campaign work for local clients.</p>
+            <div class="project-links">
+              <a class="btn small" href="https://www.instagram.com/hatupoi_production/" target="_blank">View</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container reveal">
+      <h2>Contact</h2>
+      <p>In need of webdevelopemnt services? Reach out:</p>
+      <div class="contact-row">
+        <div class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:brianmbura3@gmail.com" class="contact-detail">brianmbura3@gmail.com</a>
+        </div>
+        <div class="contact-card">
+          <i class="fab fa-whatsapp"></i>
+          <a href="https://wa.me/254740292960" target="_blank" class="contact-detail">+254 740 292 960</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Brian Mbura — Built with ❤️ • <a href="https://github.com/brianmbura" target="_blank" class="link-color">GitHub</a></p>
+    </div>
+  </footer>
+
+  <!-- small inline script for year & smooth scroll (optional & tiny) -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Smooth scroll for internal links (small progressive enhancement)
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const t = document.querySelector(a.getAttribute('href'));
+        if(t) t.scrollIntoView({behavior:'smooth',block:'start'});
+      });
+    });
+  </script>
+</body>
+</html>
