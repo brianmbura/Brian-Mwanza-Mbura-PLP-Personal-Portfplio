@@ -1,6 +1,8 @@
 # Brian Mbura's Portfolio Website 🎯
 
 Welcome to my personal portfolio! Built using HTML and CSS.
+ [Live Demo][(https://hatupoi.vercel.app)](https://brianmbura.github.io/Brian-Mwanza-Mbura-PLP-Personal-Portfplio/)
+
 
 ## 🔥 About Me
 Hi! I’m Brian Mbura, a passionate creative and full-stack enthusiast blending design, development, and storytelling into digital experiences.
@@ -28,8 +30,7 @@ Bachelor’s Degree in ICT – Jaramogi Oginga Odinga University of Technology
 A system for managing car rentals online including customer feedback and admin dashboards. [View on GitHub](https://github.com/brianmbura/car-rental)
 
 **Hatupoi Production Website**  
-A multimedia website showcasing work in photography, videography, and design. [Live Site](https://hatupoi.vercel.app)
-
+A multimedia website showcasing work in photography, videography, and design.
 ## 📬 Contact
 Feel free to connect with me via the contact form on the site or through:  
 📧 brianmbura@gmail.com  
